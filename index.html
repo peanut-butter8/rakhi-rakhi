@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakhi, Bros 💛</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=DM+Sans:wght@500;700&display=swap');
+  *{box-sizing:border-box}
+  body{margin:0;background:#fff8f0;color:#3d2330;font-family:"DM Sans",sans-serif;overflow-x:hidden}
+  .orb{position:fixed;border-radius:50%;filter:blur(2px);opacity:.55;z-index:-1}
+  .o1{width:220px;height:220px;background:#ffd166;top:-70px;left:-60px}
+  .o2{width:260px;height:260px;background:#ff9fba;right:-90px;top:180px}
+  .o3{width:190px;height:190px;background:#b8e1d0;left:-80px;bottom:40px}
+  nav{padding:22px 7%;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-family:"Baloo 2";font-weight:800;font-size:27px;color:#c84b6b}
+  .pill{background:#fff;border:2px solid #f2d5cf;border-radius:999px;padding:9px 16px;font-weight:700}
+  .hero{max-width:1120px;margin:auto;padding:35px 7% 80px;display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+  .eyebrow{color:#d34f70;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+  h1{font-family:"Baloo 2";font-size:clamp(55px,8vw,100px);line-height:.85;margin:14px 0 22px}
+  h1 span{color:#d34f70}
+  .lead{font-size:19px;line-height:1.65;max-width:590px;color:#644653}
+  button{border:0;background:#d34f70;color:white;padding:15px 22px;border-radius:16px;font:700 16px "DM Sans";cursor:pointer;box-shadow:0 10px 25px #d34f7040;transition:.2s}
+  button:hover{transform:translateY(-3px) rotate(-1deg)}
+  .photo-wrap{position:relative;transform:rotate(3deg)}
+  .photo-wrap:before{content:"";position:absolute;inset:-16px;background:#ffd166;border-radius:28px;transform:rotate(-6deg);z-index:-1}
+  .photo{width:100%;display:block;border-radius:25px;border:9px solid white;box-shadow:0 22px 55px #5a304025}
+  .sticker{position:absolute;background:#fff;border-radius:18px;padding:11px 15px;font-weight:800;box-shadow:0 8px 25px #0002}
+  .s1{top:-25px;right:-25px;transform:rotate(8deg)}
+  .s2{bottom:18px;left:-35px;transform:rotate(-8deg)}
+  .section{max-width:1120px;margin:auto;padding:20px 7% 80px}
+  .section h2{font:800 47px "Baloo 2";margin:0 0 10px}
+  .sub{color:#765865;margin-bottom:30px}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .card{background:#fff;border:2px solid #f3dfd7;border-radius:24px;padding:25px;box-shadow:0 12px 35px #7d3b3b0c}
+  .emoji{font-size:38px}.card h3{font:800 24px "Baloo 2";margin:10px 0 5px}.card p{line-height:1.55;color:#6f5660}
+  .meter{height:11px;background:#f4e8e3;border-radius:99px;overflow:hidden;margin:15px 0 8px}
+  .fill{height:100%;border-radius:99px;background:#d34f70}
+  .memory{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;background:#3d2330;color:white;border-radius:32px;padding:30px;margin-top:20px}
+  .memory img{width:100%;border-radius:22px;display:block}
+  .memory h2{color:#ffd166;margin-top:0}.memory p{line-height:1.7;color:#f8e9e9}
+  .surprise{margin-top:20px;background:#ffd166;color:#3d2330;box-shadow:none}
+  .message{display:none;margin-top:18px;background:#fff8e1;border:2px dashed #d59d23;border-radius:18px;padding:17px;font-weight:700}
+  .message.show{display:block;animation:pop .35s ease}
+  .footer{text-align:center;padding:45px 20px;color:#876875}
+  .rakhi{font-size:42px;display:inline-block;animation:spin 4s linear infinite}
+  .confetti{position:fixed;top:-20px;pointer-events:none;font-size:22px;animation:fall 2.8s linear forwards}
+  @keyframes pop{from{transform:scale(.8);opacity:0}to{transform:scale(1);opacity:1}}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes fall{to{transform:translateY(110vh) rotate(500deg);opacity:0}}
+  @media(max-width:800px){.hero,.memory{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero{padding-top:15px}h1{font-size:64px}.photo-wrap{margin:20px 10px}}
+</style>
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+
+<nav>
+  <div class="logo">🪢 Rakhi, Bros!</div>
+  <div class="pill">Made with sibling chaos 💛</div>
+</nav>
+
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Happy Raksha Bandhan ✨</div>
+    <h1>To my<br><span>favourite</span><br>troublemakers.</h1>
+    <p class="lead">You may steal my snacks, annoy me for sport, and pretend you don't care… but you're still my brothers, and I wouldn't trade you for anything. Okay, maybe for chocolate. 🍫</p>
+    <button onclick="celebrate()">🎉 Press for Rakhi Magic</button>
+  </div>
+  <div class="photo-wrap">
+    <img class="photo" src="rakhi-memory.jpeg" alt="A sweet childhood family memory">
+    <div class="sticker s1">Certified chaos ✨</div>
+    <div class="sticker s2">Baby bros 🥹</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>The official brother report 📋</h2>
+  <p class="sub">Scientifically questionable. Emotionally accurate.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="emoji">😈</div><h3>Annoying Level</h3>
+      <p>Somehow you've mastered the art of being irritating and lovable at exactly the same time.</p>
+      <div class="meter"><div class="fill" style="width:96%"></div></div><b>96% — elite performance</b>
+    </div>
+    <div class="card">
+      <div class="emoji">🍟</div><h3>Snack Theft</h3>
+      <p>If my food disappears, I already know who to interrogate. There will be evidence.</p>
+      <div class="meter"><div class="fill" style="width:91%"></div></div><b>91% — highly suspicious</b>
+    </div>
+    <div class="card">
+      <div class="emoji">🫶</div><h3>Big Bro Energy</h3>
+      <p>Under all the teasing is the person I know I can count on. That part matters most.</p>
+      <div class="meter"><div class="fill" style="width:100%"></div></div><b>100% — no debate</b>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="memory">
+    <img src="rakhi-memory.jpeg" alt="Childhood memory">
+    <div>
+      <div class="rakhi">🪢</div>
+      <h2>Before the arguments…</h2>
+      <p>Look at us! Tiny humans, zero idea how many future arguments were loading. 😂</p>
+      <p>From childhood madness to today's inside jokes, I'm ridiculously lucky to have you both in my life.</p>
+      <button class="surprise" onclick="reveal()">💌 One tiny confession</button>
+      <div id="msg" class="message">Fine. You're actually pretty great. ❤️ Happy Rakhi, bros. Now where's my gift?</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div>🪢 • 🥥 • 💛 • 🍫</div>
+  <p>Happy Raksha Bandhan to the world's most lovable nuisances.</p>
+</footer>
+
+<script>
+function reveal(){document.getElementById('msg').classList.toggle('show');}
+function celebrate(){
+  const icons=['🪢','💛','✨','🌸','🍫','🎉','🧿'];
+  for(let i=0;i<34;i++){
+    const x=document.createElement('div');
+    x.className='confetti';
+    x.textContent=icons[Math.floor(Math.random()*icons.length)];
+    x.style.left=Math.random()*100+'vw';
+    x.style.animationDelay=Math.random()*.9+'s';
+    x.style.fontSize=(16+Math.random()*20)+'px';
+    document.body.appendChild(x);
+    setTimeout(()=>x.remove(),4000);
+  }
+}
+</script>
+</body>
+</html>
